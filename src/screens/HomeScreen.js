@@ -28,6 +28,11 @@ const HomeScreen = ({ navigation }) => {
           navigation.navigate('Counter')
         }}
       />
+      <Button style={styles.button} title="Color Screen"
+        onPress={() => {
+          navigation.navigate('Color')
+        }}
+      />
       {/* <TouchableOpacity onPress={() => {
         props.navigation.navigate('List')
       }}>
@@ -38,15 +43,15 @@ const HomeScreen = ({ navigation }) => {
 
 const styles = StyleSheet.create({
   greet: {
-    fontSize: 30,
+    fontSize:40,
   },
   name: {
     fontSize: 20,
   },
-  button: {
-    margin: 20,
-    padding: 20
-  }
+  // button: {
+  //   margin: 20,
+  //   padding: 20
+  // }
 });
 
 export default HomeScreen;
