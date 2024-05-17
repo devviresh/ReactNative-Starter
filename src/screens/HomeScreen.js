@@ -33,6 +33,16 @@ const HomeScreen = ({ navigation }) => {
           navigation.navigate('Color')
         }}
       />
+      <Button style={styles.button} title="Hue Screen"
+        onPress={() => {
+          navigation.navigate('Hue')
+        }}
+      />
+      <Button style={styles.button} title="Text Screen"
+        onPress={() => {
+          navigation.navigate('Text')
+        }}
+      />
       {/* <TouchableOpacity onPress={() => {
         props.navigation.navigate('List')
       }}>
