@@ -5,7 +5,7 @@ const HomeScreen = ({ navigation }) => {
   // console.log(props);
   const name = "Viresh Dev";
   return (
-    <View>
+    <View style={{ backgroundColor: 'red' }}>
       <Text style={styles.greet}>Hii there..</Text>
       <Text style={styles.name}>My name is {name}</Text>
       <Button style={styles.button} title="Component Screen"
@@ -43,6 +43,11 @@ const HomeScreen = ({ navigation }) => {
           navigation.navigate('Text')
         }}
       />
+      <Button style={styles.button} title="Box Screen"
+        onPress={() => {
+          navigation.navigate('Box')
+        }}
+      />
       {/* <TouchableOpacity onPress={() => {
         props.navigation.navigate('List')
       }}>
@@ -53,7 +58,7 @@ const HomeScreen = ({ navigation }) => {
 
 const styles = StyleSheet.create({
   greet: {
-    fontSize:40,
+    fontSize: 40,
   },
   name: {
     fontSize: 20,
